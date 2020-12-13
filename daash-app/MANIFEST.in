@@ -1,0 +1,28 @@
+recursive-include daash/base/*.xlsx
+recursive-include daash/base/locale *.mo
+recursive-include daash/base/templates *.jinja *.txt *.html
+recursive-include daash/base/static *.*
+recursive-exclude daash/base/static *.map
+recursive-include daash/blog/*.xlsx
+recursive-include daash/blog/locale *.mo
+recursive-include daash/blog/templates *.jinja *.txt *.html
+recursive-include daash/blog/static *.*
+recursive-exclude daash/blog/static *.map
+recursive-include daash/frontauth/*.xlsx
+recursive-include daash/frontauth/locale *.mo
+recursive-include daash/frontauth/templates *.jinja *.txt *.html
+recursive-include daash/frontauth/static *.*
+recursive-exclude daash/frontauth/static *.map
+recursive-include daash/search/*.xlsx
+recursive-include daash/search/locale *.mo
+recursive-include daash/search/templates *.jinja *.txt *.html
+recursive-include daash/search/static *.*
+recursive-exclude daash/search/static *.map
+recursive-include daash/tenant/*.xlsx
+recursive-include daash/tenant/locale *.mo
+recursive-include daash/tenant/templates *.jinja *.txt *.html
+recursive-include daash/tenant/static *.*
+recursive-exclude daash/tenant/static *.map
+
+
+

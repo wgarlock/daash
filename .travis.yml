@@ -1,0 +1,23 @@
+language: python
+python:
+  - "3.7"
+
+services:
+  - postgresql
+  - redis-server
+
+before_script:
+  - "flake8"
+  - psql -c "create user testuser with password 'test12345';" postgres
+  - psql -c "alter user testuser with superuser;"
+  - psql -c 'create database daashtestdb with owner testuser;' postgres
+
+install:
+  - pip install -r requirements.txt
+
+branches:
+  only:
+  - master
+
+script:
+  - cd daash-app/daash_test && pytest
